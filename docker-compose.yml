@@ -8,6 +8,8 @@ services:
   strider:
     # image: mhdsyrwan/strider
     build: .
+    ports:
+      - "3000:3000"
     environment:
       VIRTUAL_HOST: 'strider.dev'
       DB_URI: 'mongodb://mongo:27017/strider-testing'
